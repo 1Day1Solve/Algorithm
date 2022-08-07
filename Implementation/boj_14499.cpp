@@ -57,9 +57,7 @@ int main(){
     ios_base::sync_with_stdio(false), cin.tie(nullptr);
 
     int K;
-
     cin >> N >> M >> x >> y >> K;
-
     for(int i=0;i<N;i++){
         for(int j=0;j<M;j++){
             cin >> map[i][j];
@@ -67,11 +65,9 @@ int main(){
     }
 
     int input;
-
     for(int i=0; i<K; i++){
         cin >> input;
         move(input);
     }
-
     return 0;
 }
