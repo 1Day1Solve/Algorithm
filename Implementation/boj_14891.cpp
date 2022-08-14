@@ -7,10 +7,12 @@ bool checked[5] = {false};
 
 void rotate(int dir, int num){
     checked[num] = true;
-    if(num != 4 && gear[num][2] != gear[num+1][6] && !checked[num+1]){
+    if(num != 4 && gear[num][2] != gear[num+1][6] && !checked[num+1])
+    {
         rotate(dir * -1, num+1);
     }
-    if(num != 1 && gear[num][6] != gear[num-1][2] && !checked[num-1]){
+    if(num != 1 && gear[num][6] != gear[num-1][2] && !checked[num-1])
+    {
         rotate(dir * -1, num-1);
     }
 
